@@ -4,7 +4,6 @@ pragma solidity ^0.8.20;
 /// @title GamingNFT - A contract for minting and batch minting gaming NFTs
 /// @author Sanjay S
 
-
 //Imports
 
 import {ERC1155} from "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
@@ -22,7 +21,10 @@ contract GamingNFt is ERC1155, Ownable, ERC1155Supply {
     uint256 public requiredETHForBatchMint = 0.00005 ether;
 
     //Replace the URI with yours
-    constructor(address initialOwner) ERC1155("ipfs://bafybeibfzji7lkkrrov6t4nwvqbhxnhqgbrkzy7shjh5gvv2kanihjehce/{id}.json") Ownable(initialOwner) {}
+    constructor(address initialOwner)
+        ERC1155("ipfs://bafybeibfzji7lkkrrov6t4nwvqbhxnhqgbrkzy7shjh5gvv2kanihjehce/{id}.json")
+        Ownable(initialOwner)
+    {}
 
     // Function to set a URI
     function setURI(string memory uri) public onlyOwner {

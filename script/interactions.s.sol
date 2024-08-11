@@ -15,7 +15,6 @@ contract Interactions is Script {
         GamingNFt gamingNFT = GamingNFt(gamingNFTAddress);
 
         //Set a new URI for the tokens
-       
 
         // Mint a single token
         uint256 singleMintId = 4; // Token ID
