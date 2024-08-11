@@ -30,7 +30,7 @@ This project is intended solely for learning, experimentation, and local develop
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/fn-sanjay/Batch-Minting-ERC1115-NFT.git
    cd batch-minting-nft
 2. Install the dependencies:
     ```bash
