@@ -5,7 +5,7 @@ import "forge-std/Script.sol";
 import {GamingNFt} from "../src/gamingnft.sol";
 
 contract DeployGamingNFt is Script {
-    address initialOwner = 0x8C013D87002b1D6956988B1597FCe68DD39442C5;//Replace with your actual owner address
+    address initialOwner = 0x8C013D87002b1D6956988B1597FCe68DD39442C5; //Replace with your actual owner address
 
     function run() external {
         // Start broadcasting from the default account

@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 //Imports
+
 import {ERC1155} from "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {ERC1155Supply} from "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol";
@@ -9,18 +10,13 @@ import {ERC1155Supply} from "@openzeppelin/contracts/token/ERC1155/extensions/ER
 error InsufficientETH(uint256 required, uint256 sent);
 error NewURIEqualToExistingURI();
 
-
 contract GamingNFt is ERC1155, Ownable, ERC1155Supply {
-    
     // State varibales
     string private _uri;
     uint256 public requiredETHForMint = 0.00001 ether;
     uint256 public requiredETHForBatchMint = 0.00005 ether;
-    
-    constructor(address initialOwner)
-        ERC1155("")
-        Ownable(initialOwner)
-    {}
+
+    constructor(address initialOwner) ERC1155("") Ownable(initialOwner) {}
 
     // Function to set a URI
     function setURI(string memory uri) public onlyOwner {
@@ -43,11 +39,7 @@ contract GamingNFt is ERC1155, Ownable, ERC1155Supply {
     }
 
     // Function to mint a single token
-    function mint(address account, uint256 id, uint256 amount, bytes memory data)
-        public
-        onlyOwner
-        payable
-    {
+    function mint(address account, uint256 id, uint256 amount, bytes memory data) public payable onlyOwner {
         if (msg.value < requiredETHForMint) {
             revert InsufficientETH(requiredETHForMint, msg.value);
         }
@@ -57,9 +49,9 @@ contract GamingNFt is ERC1155, Ownable, ERC1155Supply {
     // Function to mint multiple tokens in a batch
     function mintBatch(address to, uint256[] memory ids, uint256[] memory amounts, bytes memory data)
         public
-        onlyOwner
         payable
-    {   
+        onlyOwner
+    {
         if (msg.value < requiredETHForBatchMint) {
             revert InsufficientETH(requiredETHForBatchMint, msg.value);
         }
