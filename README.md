@@ -2,6 +2,24 @@
 
 This repository contains the smart contract and deployment scripts for the GamingNFT project. The project utilizes the ERC-1155 token standard and is built using Solidity, Foundry, and OpenZeppelin libraries.
 
+# Disclaimer
+
+**Warning:** This project is intended for educational and testing purposes only. It is not suitable for use in a production environment.
+
+## Security Notice
+
+- **Not Audited:** The codebase has not undergone any formal security audits. It may contain vulnerabilities or security flaws that could result in the loss of funds or other serious issues.
+- **Use at Your Own Risk:** By using this project, you acknowledge that you understand the risks involved. The authors of this project will not be held liable for any damages or losses that may occur.
+
+## Recommendation
+
+- **Do Not Use in Production:** It is strongly recommended that you do not use this project in any production environment or for managing real assets.
+- **Review and Audit:** If you plan to use or adapt this project for any purpose, ensure that the code is thoroughly reviewed and audited by security professionals.
+
+## Purpose
+
+This project is intended solely for learning, experimentation, and local development. It is provided "as is" without any warranties or guarantees.
+
 ## Prerequisites
 
 - [Foundry](https://getfoundry.sh/) - A fast, portable, and modular toolkit for Ethereum application development.
