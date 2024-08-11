@@ -1,0 +1,7 @@
+GamingNFtTest:testInsufficientETHForBatchMint() (gas: 31352)
+GamingNFtTest:testInsufficientETHForSingleMint() (gas: 32833)
+GamingNFtTest:testSetSameURIReverts() (gas: 67828)
+GamingNFtTest:testSetURI() (gas: 63297)
+GamingNFtTest:testSuccessfulBatchMint() (gas: 158726)
+GamingNFtTest:testSuccessfulSingleMint() (gas: 103343)
+GamingNFtTest:testSupplyManagement() (gas: 201182)
