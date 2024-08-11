@@ -38,6 +38,7 @@ This project is intended solely for learning, experimentation, and local develop
 3. Build the Project 
    ```bash
    make build
+ >Replace your URI in the src/gamingnft.sol and also replace the Image and Metadata
 ## Usage
 
 ### Testing

@@ -15,9 +15,7 @@ contract Interactions is Script {
         GamingNFt gamingNFT = GamingNFt(gamingNFTAddress);
 
         //Set a new URI for the tokens
-        string memory newURI = "https://ipfs.io/ipfs/Qmf5yAF6Gyh9woSPE3xuC9Kyz7pc43bXZA4hn7pzb7bxRm/{id}.json";
-        gamingNFT.setURI(newURI);
-        console.log("Set new URI to %s", newURI);
+       
 
         // Mint a single token
         uint256 singleMintId = 4; // Token ID

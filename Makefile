@@ -2,7 +2,7 @@
 
 .PHONY: all clean remove install update build test
 
-DEFAULT_ANVIL_KEY := //Relpace with your Anvil private key
+DEFAULT_ANVIL_KEY := //REPLACE WITH YOUR ANVIL PRIVTAE KEY
 
 
 all: clean remove install update build
