@@ -1,6 +1,8 @@
 -include .env
 
-DEFAULT_ANVIL_KEY := 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+.PHONY: all clean remove install update build test
+
+DEFAULT_ANVIL_KEY := //Relpace with your Anvil private key
 
 
 all: clean remove install update build
@@ -20,8 +22,6 @@ install:; forge install OpenZeppelin/openzeppelin-contracts --no-commit && forge
 build:; forge build
 
 test :; forge test 
-
-.PHONY: all clean remove install update build test
 
 snapshot :; forge snapshot
 
